@@ -50,7 +50,7 @@ st.set_page_config(page_title="CryptoData Price Agent (Gemini)", page_icon="💹
 st.title("💹💵 CryptoData Price Agent Created by Qirat Saeed")
 
 
-coin_name = st.text_input("Enter Coin Name or Symbol (e.g., Bitcoin or BTC):")
+coin_name = st.text_input("Enter Coin Name(e.g., Bitcoin or BTC):")
 
 if st.button("Get Price & Rank"):
     if coin_name:
