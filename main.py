@@ -17,7 +17,7 @@ def show_top_coins():
             st.success(f"{coin['symbol']}: ${coin['price']} USDT")
 
     except requests.exceptions.RequestException as e:
-        st.error("Error fetching data from Binance API:", e)
+        st.error(f"Error fetching data from Binance API: {e}")
 
 
 def show_specific_coin(coin_symbol):
